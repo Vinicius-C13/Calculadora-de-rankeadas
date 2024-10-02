@@ -1,6 +1,6 @@
 function calculadora_de_rankeadas(vitorias){
 
-    tier = ""
+    let tier
     //Estrutura condicional que define o output se baseando no valor do input
     if(typeof vitorias != "number") {
       console.log("Insira um valor válido!")
