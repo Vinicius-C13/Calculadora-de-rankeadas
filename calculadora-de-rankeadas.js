@@ -1,21 +1,24 @@
 function calculadora_de_rankeadas(vitorias){
 
+    tier = ""
     //Estrutura condicional que define o output se baseando no valor do input
     if(typeof vitorias != "number") {
-      return "Insira um valor válido!"
+      console.log("Insira um valor válido!")
     } else if(vitorias < 10) {  
-      return "Ferro"
+      tier = "Ferro"
     } else if(vitorias < 20) {
-        return "Bronze"
+        tier = "Bronze"
     } else if(vitorias < 50) {
-        return "Prata"
+        tier = "Prata"
     } else if(vitorias < 80) {
-        return "Ouro"
+        tier = "Ouro"
     } else if(vitorias < 90) {
-        return "Diamante"
+        tier = "Diamante"
     } else if(vitorias < 100) {
-        return "Lendário"
+        tier = "Lendário"
     } else {
-        return "Imortal"
+        tier = "Imortal"
     }
+
+    console.log(`O jogador tem ${vitorias} vitorias e seu tier é ${tier}`)
 }
